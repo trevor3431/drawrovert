@@ -44,9 +44,8 @@ module Ex26
   end
 end
 
-=begin
 puts "Let's practice everything."
-puts 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+puts "You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs."
 
 poem = <<END
 \tThe lovely world
@@ -55,40 +54,38 @@ cannot discern \n the needs of love
 nor comprehend passion from intuition
 and requires an explanation
 \n\t\twhere there is none.
-ENDED
+END
 
-puts "--------------"
+14.times { puts "-" }
 puts poem
-puts "--------------"
+14.times { puts "-" }
 
 
-five = 10 - 2  3 - 6
-puts "This should be five: #{five"
+five = 10 - 2 + 3 - 6
+puts "This should be five: #{five}"
 
 def secret_formula(started)
-  jelly_bens = started * 500
+  jelly_beans = started * 500
   jars = jelly_beans / 1000
-  crate = jars / 100
+  crates = jars / 100
   return jelly_beans, jars, crates
 end
 
 
 start_point = 10000
-beans, jars crates = secret_formula(start_point)
+beans, jars, crates = secret_formula(start_point)
 
 puts "With a starting point of: #{start_point}"
-puts "We'd have #{beans beans, #{jars} jars, and #{crates} crates."
+puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates."
 
-start_point = start_point / 10
 
 sentence = "All good things come to those who wait."
-words = Ex25.break_words(sentence)
-sorted_words = Ex25.sort_words(words)
-Ex25.print_first_word(wrds)
-Ex25.print_last_word words)
-Ex25.print_first_word(sort_words)
-Ex25.print_last_word(sorted_words)
-sorted_words = Ex25.sort_sentenc(sentence)
-Ex25.print_first_and_last(sentence)
-Ex25:print_first_and_last_sorted(sentence)
-=end
+words = Ex26.break_words(sentence)
+sorted_words = Ex26.sort_words(words)
+Ex26.print_first_word(words)
+Ex26.print_last_word(words)
+Ex26.print_first_word(sorted_words)
+Ex26.print_last_word(sorted_words)
+sorted_words = Ex26.sort_sentence(sentence)
+Ex26.print_first_and_last(sentence)
+Ex26.print_first_and_last_sorted(sentence)
